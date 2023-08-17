@@ -6,11 +6,13 @@
     "android": "react-native run-android",
     "ios": "react-native run-ios",
     "deps": "yarn install && bundle install && bundle exec pod install --project-directory=ios",
+    "clear-all-cache": "sudo rm -rf android/.gradle && sudo rm -rf android/.idea && sudo rm -rf android/build && sudo rm -rf android/app/build && sudo rm -rf coverage && sudo rm -rf node_modules && sudo rm -rf ios/build && sudo rm -rf ios/Pods && sudo rm -rf vendor",
     "lint": "eslint .",
     "start": "react-native start",
     "test": "jest"
   },
   "dependencies": {
+    "@react-native-firebase/app": "^18.2.0",
     "@react-navigation/native": "^6.1.6",
     "@react-navigation/native-stack": "^6.9.12",
     "@reduxjs/toolkit": "^1.9.5",
